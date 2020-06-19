@@ -5,7 +5,7 @@ const restricted = require('../auth/authenticate-middleware')
 
 router.get(
      '/', 
-     restricted, 
+     // restricted, 
      (req, res) => {
      Users.findUsers()
           .then(users => {
